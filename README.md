@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # i2DGS: Inverting 2D Gaussian Splatting for 6D Pose Estimation
 This repository contains a PyTorch implementation for the paper: [i2DGS: Inverting 2D Gaussian Splatting for 6D Pose Estimation]
 
@@ -12,14 +11,14 @@ conda activate surfel_splatting
 
 ## Data Preparation
 
-# Tanks&Temples
+### Tanks&Temples
 We use the dataset format of NSVF:
 
 [Tanks&Temples](https://dl.fbaipublicfiles.com/nsvf/dataset/TanksAndTemple.zip)
 
-Note: The Ignatius object contains a malformed intrinsics.txt [here](static/intrinsics.txt)  . You can find a correctly formatted version here. Replace the original file to resolve this issue.
+Note: The Ignatius object contains a malformed intrinsics.txt. You can find a correctly formatted version. Replace the original file to resolve this issue.
 
-# Mip-NeRF 360°
+### Mip-NeRF 360°
 Download part 1 of the dataset:
 
 [Mip-NeRF 360°](http://storage.googleapis.com/gresearch/refraw360/360_v2.zip)
@@ -31,7 +30,8 @@ The training script is located in `train.py`. To train a single 2DGS model:
 ```bash
 python train.py -s <path_to_dataset> -m <path_to_output_directory>
 ```
-##  Pose Estimation Module
+
+## Pose Estimation Module
 The training and testing script for pose estimation is located in `pretrain_eval_attention.py`: 
 
 ```bash
@@ -47,11 +47,12 @@ python train.py -s <path to m360>/<garden> -m output/garden
 # run the pose estimation model
 python3 pretrain_eval_attention.py --exp_path ./output/garden --out_path results_garden.json
 ```
+
 ## Acknowledgements
 This project builds upon the following foundational works:
 
--6DGS for the 6D pose estimation framework
--2DGS for the 2D Gaussian Splatting techniques
+- 6DGS for the 6D pose estimation framework
+- 2DGS for the 2D Gaussian Splatting techniques
 
 We thank the respective authors for their valuable contributions.
 
@@ -73,7 +74,3 @@ We thank the respective authors for their valuable contributions.
     doi       = {10.1145/3641519.3657428}
 }
 ```
-=======
-# i2DGS
-Code implementation of the paper "i2DGS: Inverting 2D Gaussian Splatting for 6D Pose Estimation". 
->>>>>>> cd4daf6da1fda70cbac56dfcfb48180419f4a1d2
