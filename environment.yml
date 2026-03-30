@@ -1,0 +1,33 @@
+name: i2dgs
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.4.1
+  - pytorch-cuda=11.8
+  - cudatoolkit=11.8
+  - torchvision=0.19.1
+  - torchaudio=2.4.1
+  - numpy=1.24.4
+  - opencv=4.10.0
+  - pillow=10.4.0
+  - tqdm=4.67.1
+  - matplotlib=3.7.5
+  - kornia=0.7.3
+  - pip=25.0.1
+  - setuptools=75.3.2
+  - wheel=0.45.1
+  - ninja=1.13.0
+  - cmake=4.1.2
+  - pip:
+    - plyfile==1.0.3
+    - kornia-rs==0.1.9
+    - submodules/diff-surfel-rasterization
+    - submodules/simple-knn
+    - triton==3.0.0
+    - tensorboard==2.14.0
+    - packaging==25.0
+    - typing_extensions==4.9.0
