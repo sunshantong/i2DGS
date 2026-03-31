@@ -9,6 +9,24 @@ conda env create --file environment.yml
 conda activate i2dgs
 ```
 
+### CUDA Extensions Setup
+
+**If you encounter GCC version errors** (CUDA 11.8 requires gcc <= 11), set:
+```bash
+export CUDA_NVCC_FLAGS="-allow-unsupported-compiler"
+```
+
+Install custom CUDA extensions:
+```bash
+# diff-surfel-rasterization
+cd submodules/diff-surfel-rasterization
+pip install -e . --no-build-isolation
+
+# simple-knn
+cd ../simple-knn
+pip install -e . --no-build-isolation
+```
+
 Install custom CUDA extensions (requires CUDA toolkit and ninja):
 ```bash
 
