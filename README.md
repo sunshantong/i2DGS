@@ -73,7 +73,6 @@ python3 pretrain_eval_attention.py --exp_path ./output/garden --out_path results
 ## Acknowledgements
 This project builds upon the following foundational works:
 
-- [diff-surfel-rasterization](https://github.com/hbb1/diff-surfel-rasterization/tree/e0ed0207b3e0669960cfad70852200a4a5847f61) - Differentiable surfel rasterization
 - 6DGS for the 6D pose estimation framework
 - 2DGS for the 2D Gaussian Splatting techniques
 
