@@ -1,4 +1,4 @@
-name: i2dgs121
+name: i2dgs
 channels:
   - pytorch
   - nvidia
