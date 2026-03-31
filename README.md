@@ -11,15 +11,14 @@ conda activate i2dgs
 
 Install custom CUDA extensions (requires CUDA toolkit and ninja):
 ```bash
-# Verify torch is installed first
-python -c "import torch; print(torch.__version__)"
+
 
 # diff-surfel-rasterization
 cd submodules/diff-surfel-rasterization
 pip install -e . --no-build-isolation
 
 # simple-knn
-cd ../simple-knn
+cd submodules/simple-knn
 pip install -e . --no-build-isolation
 ```
 
