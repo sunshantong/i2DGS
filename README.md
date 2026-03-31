@@ -6,7 +6,22 @@ This repository contains a PyTorch implementation for the paper: [i2DGS: Inverti
 Install environment:
 ```bash
 conda env create --file environment.yml
-conda activate surfel_splatting
+conda activate i2dgs
+```
+
+Install custom CUDA extensions (requires CUDA toolkit and ninja):
+```bash
+# diff-surfel-rasterization
+cd submodules/diff-surfel-rasterization
+pip install -e .
+
+# diff-gaussian-rasterization
+cd ../diff-gaussian-rasterization
+pip install -e .
+
+# simple-knn
+cd ../simple-knn
+pip install -e .
 ```
 
 ## Data Preparation
