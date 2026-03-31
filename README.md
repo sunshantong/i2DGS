@@ -1,5 +1,6 @@
 # i2DGS: Inverting 2D Gaussian Splatting for 6D Pose Estimation
 This repository contains a PyTorch implementation for the paper: [i2DGS: Inverting 2D Gaussian Splatting for 6D Pose Estimation]
+<img width="1948" height="770" alt="683b4e9cce3735640fc620ec8888ef7c" src="https://github.com/user-attachments/assets/4f2794f3-c78f-4cf6-bdd8-9772169a8626" />
 
 ## Installation
 
