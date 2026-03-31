@@ -1,33 +1,59 @@
 name: i2dgs
 channels:
-  - conda-forge
   - pytorch
   - nvidia
+  - conda-forge
   - defaults
 dependencies:
   - python=3.10
-  - pytorch=2.4.1
-  - pytorch-cuda=11.8
-  - cudatoolkit=11.8
-  - torchvision=0.19.1
-  - torchaudio=2.4.1
-  - numpy=1.24.4
-  - opencv=4.10.0
-  - pillow=10.4.0
-  - tqdm=4.67.1
-  - matplotlib=3.7.5
-  - kornia=0.7.3
-  - pip=25.0.1
-  - setuptools=75.3.2
-  - wheel=0.45.1
-  - ninja=1.13.0
-  - cmake=4.1.2
+  - pip
   - pip:
-    - plyfile==1.0.3
-    - kornia-rs==0.1.9
-    - submodules/diff-surfel-rasterization
-    - submodules/simple-knn
-    - triton==3.0.0
-    - tensorboard==2.14.0
-    - packaging==25.0
-    - typing_extensions==4.9.0
+    - absl-py==2.4.0
+    - antlr4-python3-runtime==4.9.3
+    - cmake==4.3.0
+    - colorama==0.4.6
+    - configargparse==1.7.5
+    - contourpy==1.3.2
+    - cycler==0.12.1
+    - diff-gaussian-rasterization-depth==0.0.0
+    - diff-surfel-rasterization==0.0.1
+    - einops==0.8.2
+    - filelock==3.25.2
+    - fonttools==4.62.1
+    - fsspec==2026.2.0
+    - grpcio==1.78.0
+    - jaxtyping==0.3.7
+    - jinja2==3.1.6
+    - kiwisolver==1.5.0
+    - kornia==0.8.2
+    - kornia-rs==0.1.10
+    - markdown==3.10.2
+    - markupsafe==3.0.2
+    - matplotlib==3.10.8
+    - mpmath==1.3.0
+    - networkx==3.4.2
+    - ninja==1.13.0
+    - numpy==2.2.6
+    - opencv-python==4.13.0.92
+    - pandas==2.3.3
+    - pillow==12.1.1
+    - plyfile==1.1.3
+    - protobuf==7.34.1
+    - pyparsing==3.3.2
+    - python-dateutil==2.9.0.post0
+    - pytz==2026.1.post1
+    - simple-knn==0.0.0
+    - six==1.17.0
+    - sympy==1.14.0
+    - tensorboard==2.20.0
+    - tensorboard-data-server==0.7.2
+    - torch==2.7.1+cu118
+    - torch-scatter==2.1.2
+    - torchaudio==2.7.1+cu118
+    - torchvision==0.22.1+cu118
+    - tqdm==4.67.3
+    - triton==3.3.1
+    - typing-extensions==4.15.0
+    - tzdata==2025.3
+    - wadler-lindig==0.1.7
+    - werkzeug==3.1.7
