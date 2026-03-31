@@ -43,7 +43,7 @@ dependencies:
     - protobuf==7.34.1
     - pyparsing==3.3.2
     - six==1.17.0
-    - sympy==1.14.0
+    - sympy
     - tensorboard==2.20.0
     - tensorboard-data-server==0.7.2
     - tqdm==4.67.3
