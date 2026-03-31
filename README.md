@@ -11,7 +11,11 @@ conda activate i2dgs
 
 ### CUDA Extensions Setup
 
-**If you encounter GCC version errors** (CUDA 11.8 requires gcc <= 11), set:
+**Prerequisites:**
+- CUDA 11.8
+- GCC 11 (CUDA 11.8 does not support GCC versions later than 11)
+
+**If you encounter GCC version errors**, set:
 ```bash
 export CUDA_NVCC_FLAGS="-allow-unsupported-compiler"
 ```
@@ -24,19 +28,6 @@ pip install -e . --no-build-isolation
 
 # simple-knn
 cd ../simple-knn
-pip install -e . --no-build-isolation
-```
-
-Install custom CUDA extensions (requires CUDA toolkit and ninja):
-```bash
-
-
-# diff-surfel-rasterization
-cd submodules/diff-surfel-rasterization
-pip install -e . --no-build-isolation
-
-# simple-knn
-cd submodules/simple-knn
 pip install -e . --no-build-isolation
 ```
 
@@ -82,6 +73,7 @@ python3 pretrain_eval_attention.py --exp_path ./output/garden --out_path results
 ## Acknowledgements
 This project builds upon the following foundational works:
 
+- [diff-surfel-rasterization](https://github.com/hbb1/diff-surfel-rasterization/tree/e0ed0207b3e0669960cfad70852200a4a5847f61) - Differentiable surfel rasterization
 - 6DGS for the 6D pose estimation framework
 - 2DGS for the 2D Gaussian Splatting techniques
 
