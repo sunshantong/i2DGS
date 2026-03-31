@@ -9,7 +9,7 @@ dependencies:
   - pip
   - numpy=1.26.4
   - matplotlib=3.10.8
-  - opencv-python=4.13.0.92
+  - opencv
   - pandas=2.3.3
   - pillow=12.1.1
   - plyfile=1.1.3
