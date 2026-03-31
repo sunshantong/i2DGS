@@ -19,7 +19,7 @@ dependencies:
     - torch==2.7.1+cu118
     - torchvision==0.22.1+cu118
     - torchaudio==2.7.1+cu118
-    - triton==3.1.0
+    - triton
     - torch-scatter
     - absl-py==2.4.0
     - antlr4-python3-runtime==4.9.3
