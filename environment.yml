@@ -17,10 +17,9 @@ dependencies:
   - pytorch::pytorch=2.5.1
   - pytorch::torchvision=0.20.1
   - pytorch::torchaudio=2.5.1
-  - pytorch::pytorch-cuda=11.8
   - pip:
     - triton==3.1.0
-    - torch-scatter==2.1.2
+    - torch-scatter
     - absl-py==2.4.0
     - antlr4-python3-runtime==4.9.3
     - colorama==0.4.6
