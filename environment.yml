@@ -7,6 +7,8 @@ channels:
 dependencies:
   - python=3.10
   - pip
+  - gcc_linux-64=11
+  - sysroot_linux-64=2.17
   - opencv
   - numpy=1.26.4
   - matplotlib=3.10.8
